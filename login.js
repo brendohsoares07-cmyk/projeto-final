@@ -3,7 +3,7 @@ if(sessionStorage.getItem("idadeVerificada") !== "true"){
 let nomeVisitante = prompt("Bem-vindo! Qual é o seu nome?");
 let idadeVisitante = Number(prompt("Olá " + nomeVisitante + "! Quantos anos você tem?"));
 
-if (idadeVisitante >= 12) {
+if (idadeVisitante >= 10) {
 
     alert("Ótimo, " + nomeVisitante + "! Você tem acesso ao nosso site.");
 
