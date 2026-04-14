@@ -11,7 +11,7 @@ if (idadeVisitante >= 10) {
 
 } else {
 
-    alert("Desculpe, " + nomeVisitante + ". Você precisa ter pelo menos 17 anos para acessar este site.");
+    alert("Desculpe, " + nomeVisitante + ". Você precisa ter pelo menos 10 anos para acessar este site.");
 
     window.location.href = "bloqueado.html";
 

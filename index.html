@@ -8,47 +8,73 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="vaca.png">
     <script src="login.js"></script>
-    
 </head>
 
 <body>
 
-   <div>
-      <header>
-        <h1 class="B">Salto do caramelo</h1>
-            <!-- BOTÕES -->
-        <button class="A"><a href="SOJ.html">Fazenda</a></button>
-        <button class="A"><a href="sobre.html">Sobre mim</a></button>
-        <button class="A"><a href="claro.html">Modo claro</a></button>
- 
-         <!-- BOTÃO DE JOGAR -->
-        <div>
-            <div>
-            <button class="D"><a href="https://www.construct.net/en/free-online-games/salto-caramelo-85499/play">Jogar agora</a></button>
-            </div> 
+<header>
+    <h1 class="B">Salto do caramelo</h1>
 
-        <!-- TEXTO PRINCIPAL -->
-        <h2 class="E">Sobre o jogo</h2>
-        <p> O jogo Salto do caramelo se passa em um cenario 2D pixelado, foi criado pensando em crianças que gostam de animais e jogos estilo plataforma.
-            No jogo, o personagem principal "caramelo" nosso querido cachorro precisa pegar todos os sinos espalhados pela fazenda raio de trovão, esses sinos foram espalhados pela vaquinha
-            pipoca que também mora na fazenda, ela gosta muito de comer grama e brincar de correr e pular, ela é uma vaquinha bem feliz e arteira que sempre vive
-            derrubando os seus sinos por ai.O objetivo do jogo é fazer o caramelo pegar todos os sinos e chegar na bandeira vermelha.</p>
+    <!-- BOTÕES -->
+    <button class="A"><a href="SOJ.html">Fazenda</a></button>
+    <button class="A"><a href="sobre.html">Sobre mim</a></button>
+    <button class="A"><a href="claro.html">Modo claro</a></button>
 
-        </div>
+    <!-- BOTÃO DE JOGAR (link externo) -->
+    <div>
+        <button class="D">
+            <a href="https://www.construct.net/en/free-online-games/salto-caramelo-85499/play" target="_blank">
+                Jogar no site original
+            </a>
+        </button>
+    </div>
 
-        <p>pipoca a vaquinha e caramelo o cachorro</p>
-         <!-- IMAGEM DA PIPOCA A VAQUINHA -->
+    <!-- 🔥 JOGO DENTRO DO SITE -->
+    <h2 class="E">Jogue aqui 👇</h2>
 
-        <img src="vacaa.png" alt="imagem da vaca pipoca">
-        <img src="sentado.png" alt="cachorro caramelo">
+    <iframe 
+        src="https://www.construct.net/en/free-online-games/salto-caramelo-85499/play"
+        style="width: 100%; height: 500px; border: none;">
+    </iframe>
 
+    <!-- TEXTO -->
+    <h2 class="E">Sobre o jogo</h2>
+    <p>
+        O jogo Salto do caramelo se passa em um cenario 2D pixelado, foi criado pensando em crianças que gostam de animais e jogos estilo plataforma.
+        No jogo, o personagem principal "caramelo" precisa pegar todos os sinos espalhados pela fazenda raio de trovão.
+    </p>
 
-         <!-- BOTÃO DE JOGAR -->
-       <div>
-            <button class="D"><a href="https://www.construct.net/en/free-online-games/salto-caramelo-85499/play">Jogar agora</a></button>
-        </div>
-     
-      </header>
-   </div>
+    <p>pipoca a vaquinha e caramelo o cachorro</p>
+
+    <!-- IMAGENS -->
+    <img src="vacaa.png" alt="imagem da vaca pipoca">
+    <img src="sentado.png" alt="cachorro caramelo">
+
+    <!-- BOTÃO INFO -->
+    <button onclick="mostrarInfo()">Mostrar informações</button>
+
+</header>
+
+<script>
+// 🔥 Dados do jogo
+let jogo = {
+    nome: "Salto do caramelo",
+    ano: 2026,
+    criador: "Brendo",
+    preco: 0
+};
+
+function mostrarInfo() {
+    let precoTexto = jogo.preco === 0 ? "Gratuito" : "R$ " + jogo.preco;
+
+    alert(
+        "Jogo: " + jogo.nome +
+        "\nAno: " + jogo.ano +
+        "\nCriador: " + jogo.criador +
+        "\nPreço: " + precoTexto
+    );
+}
+</script>
+
 </body>
 </html>
